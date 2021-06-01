@@ -15,5 +15,6 @@
     <string name="follower">Follower</string>
     <string name="noClick">bấm để xem</string>
     <string name="trueClick">ẩn thông tin</string>
+    <string name="title_activity_screen2">Screen2</string>
 
 </resources>

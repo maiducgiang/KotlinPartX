@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -52,6 +53,12 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   public final ImageView image4;
 
   @NonNull
+  public final Button nextScreen;
+
+  @NonNull
+  public final EditText textScreen;
+
+  @NonNull
   public final TextView textView;
 
   @NonNull
@@ -78,10 +85,14 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   @Bindable
   protected String mCodeCheck;
 
+  @Bindable
+  protected String mTexthello;
+
   protected ActivityMainBinding(Object _bindingComponent, View _root, int _localFieldCount,
       TextView Follow, TextView Follower, TextView Photo, ImageView anh4, ImageView anh5,
       Button buttonCheck, TextView codeFollow, TextView codeFollower, TextView codePhoto,
-      Group group, ImageView image4, TextView textView, TextView textView2, TextView username) {
+      Group group, ImageView image4, Button nextScreen, EditText textScreen, TextView textView,
+      TextView textView2, TextView username) {
     super(_bindingComponent, _root, _localFieldCount);
     this.Follow = Follow;
     this.Follower = Follower;
@@ -94,6 +105,8 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
     this.codePhoto = codePhoto;
     this.group = group;
     this.image4 = image4;
+    this.nextScreen = nextScreen;
+    this.textScreen = textScreen;
     this.textView = textView;
     this.textView2 = textView2;
     this.username = username;
@@ -139,6 +152,13 @@ public abstract class ActivityMainBinding extends ViewDataBinding {
   @Nullable
   public String getCodeCheck() {
     return mCodeCheck;
+  }
+
+  public abstract void setTexthello(@Nullable String texthello);
+
+  @Nullable
+  public String getTexthello() {
+    return mTexthello;
   }
 
   @NonNull

@@ -14,4 +14,8 @@ public class BR {
   public static final int name = 5;
 
   public static final int photo = 6;
+
+  public static final int texthello = 7;
+
+  public static final int texthelloo = 8;
 }

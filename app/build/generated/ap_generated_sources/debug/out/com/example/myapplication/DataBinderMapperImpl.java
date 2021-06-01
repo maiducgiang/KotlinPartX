@@ -7,6 +7,7 @@ import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
 import com.example.myapplication.databinding.ActivityMainBindingImpl;
+import com.example.myapplication.databinding.ActivityScreen2BindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -20,10 +21,13 @@ import java.util.List;
 public class DataBinderMapperImpl extends DataBinderMapper {
   private static final int LAYOUT_ACTIVITYMAIN = 1;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(1);
+  private static final int LAYOUT_ACTIVITYSCREEN2 = 2;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(2);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.myapplication.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.myapplication.R.layout.activity_screen2, LAYOUT_ACTIVITYSCREEN2);
   }
 
   @Override
@@ -40,6 +44,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new ActivityMainBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for activity_main is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ACTIVITYSCREEN2: {
+          if ("layout/activity_screen2_0".equals(tag)) {
+            return new ActivityScreen2BindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_screen2 is invalid. Received: " + tag);
         }
       }
     }
@@ -86,7 +96,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerBrLookup {
-    static final SparseArray<String> sKeys = new SparseArray<String>(7);
+    static final SparseArray<String> sKeys = new SparseArray<String>(9);
 
     static {
       sKeys.put(0, "_all");
@@ -96,14 +106,17 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put(4, "follower");
       sKeys.put(5, "name");
       sKeys.put(6, "photo");
+      sKeys.put(7, "texthello");
+      sKeys.put(8, "texthelloo");
     }
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(1);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(2);
 
     static {
       sKeys.put("layout/activity_main_0", com.example.myapplication.R.layout.activity_main);
+      sKeys.put("layout/activity_screen2_0", com.example.myapplication.R.layout.activity_screen2);
     }
   }
 }

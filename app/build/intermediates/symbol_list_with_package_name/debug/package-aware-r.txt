@@ -1247,6 +1247,7 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -1832,6 +1833,7 @@ id mtrl_picker_title_text
 id multiply
 id navigation_header_container
 id never
+id nextScreen
 id noScroll
 id none
 id normal
@@ -1943,6 +1945,8 @@ id test_radiobutton_app_button_tint
 id text
 id text2
 id textEnd
+id textHello
+id textScreen
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -2051,6 +2055,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_screen2
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2220,6 +2225,7 @@ string photos
 string ptit_itptitclub_nguyen_thu_nga_10_ielts
 string search_menu_title
 string status_bar_notification_info_overflow
+string title_activity_screen2
 string todo
 string trueClick
 string yeb
@@ -2685,6 +2691,9 @@ style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
 style Theme_MyApplication
+style Theme_MyApplication_AppBarOverlay
+style Theme_MyApplication_NoActionBar
+style Theme_MyApplication_PopupOverlay
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark

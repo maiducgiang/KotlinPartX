@@ -8,6 +8,7 @@
         <variable name="follower" type="String" />
         <variable name="follow" type="String" />
         <variable name="codeCheck" type="String" />
+        <variable name="texthello" type="String" />
     </data>
 
 
@@ -28,7 +29,22 @@
             android:textStyle="bold"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
+        <EditText
+            android:id="@+id/textScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="demo"
+            android:inputType="text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <Button
+            android:id="@+id/nextScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
         <ImageView
             android:id="@+id/image4"
             android:layout_width="103dp"

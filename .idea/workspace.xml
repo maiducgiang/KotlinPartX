@@ -18,7 +18,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SerialNumber@192.168.38.103:5555]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -28,6 +28,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="layoutResourceFile" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Script" />
+        <option value="Kotlin Worksheet" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -43,11 +47,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Social_app_screen" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../MyApplication2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="android.template.-1320845974">
+      <recent name="com.example.myapplication" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\AndroidStudioProjects\RazeGalactic-ComplexLayout\MyApplication\app\src\main\res\drawable" />
     </key>
@@ -135,33 +142,42 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="9" key="#Plugins/0.0.1366.738/1366.0.1440.870@0.0.1366.738" timestamp="1622266278709" />
+    <state x="427" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1622543173850">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="427" y="154" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738/1366.0.1440.870@0.0.1366.738" timestamp="1622543173850" />
+    <state x="1816" y="181" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738/1366.0.1440.870@1366.0.1440.870" timestamp="1622526696018" />
     <state x="1930" y="220" key="AndroidCreateXmlResourceDialog" timestamp="1622207599724">
       <screen x="1366" y="0" width="1440" height="870" />
     </state>
     <state x="1930" y="220" key="AndroidCreateXmlResourceDialog/0.0.1366.738/1366.0.1440.870@1366.0.1440.870" timestamp="1622207599724" />
-    <state x="1866" y="189" key="FileChooserDialogImpl" timestamp="1622131763610">
+    <state x="1866" y="189" key="FileChooserDialogImpl" timestamp="1622564051602">
       <screen x="1366" y="0" width="1440" height="870" />
     </state>
-    <state x="1866" y="189" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1440.870@1366.0.1440.870" timestamp="1622131763610" />
-    <state width="1323" height="140" key="GridCell.Tab.0.bottom" timestamp="1622436372763">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="1866" y="189" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1440.870@1366.0.1440.870" timestamp="1622564051602" />
+    <state width="1397" height="183" key="GridCell.Tab.0.bottom" timestamp="1622550238614">
+      <screen x="1366" y="0" width="1440" height="870" />
     </state>
     <state width="1323" height="140" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1440.870@0.0.1366.738" timestamp="1622436372763" />
-    <state width="1397" height="184" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1440.870@1366.0.1440.870" timestamp="1622213002190" />
-    <state width="1323" height="140" key="GridCell.Tab.0.center" timestamp="1622436372763">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1397" height="183" key="GridCell.Tab.0.bottom/0.0.1366.738/1366.0.1440.870@1366.0.1440.870" timestamp="1622550238614" />
+    <state width="1397" height="183" key="GridCell.Tab.0.center" timestamp="1622550238614">
+      <screen x="1366" y="0" width="1440" height="870" />
     </state>
     <state width="1323" height="140" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1440.870@0.0.1366.738" timestamp="1622436372763" />
-    <state width="1397" height="184" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1440.870@1366.0.1440.870" timestamp="1622213002190" />
-    <state width="1323" height="140" key="GridCell.Tab.0.left" timestamp="1622436372762">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1397" height="183" key="GridCell.Tab.0.center/0.0.1366.738/1366.0.1440.870@1366.0.1440.870" timestamp="1622550238614" />
+    <state width="1397" height="183" key="GridCell.Tab.0.left" timestamp="1622550238614">
+      <screen x="1366" y="0" width="1440" height="870" />
     </state>
     <state width="1323" height="140" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1440.870@0.0.1366.738" timestamp="1622436372762" />
-    <state width="1397" height="184" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1440.870@1366.0.1440.870" timestamp="1622213002189" />
-    <state width="1323" height="140" key="GridCell.Tab.0.right" timestamp="1622436372763">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1397" height="183" key="GridCell.Tab.0.left/0.0.1366.738/1366.0.1440.870@1366.0.1440.870" timestamp="1622550238614" />
+    <state width="1397" height="183" key="GridCell.Tab.0.right" timestamp="1622550238614">
+      <screen x="1366" y="0" width="1440" height="870" />
     </state>
     <state width="1323" height="140" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1440.870@0.0.1366.738" timestamp="1622436372763" />
-    <state width="1397" height="184" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1440.870@1366.0.1440.870" timestamp="1622213002190" />
+    <state width="1397" height="183" key="GridCell.Tab.0.right/0.0.1366.738/1366.0.1440.870@1366.0.1440.870" timestamp="1622550238614" />
+    <state x="1576" y="-13" width="896" height="745" maximized="true" key="dock-window-1" timestamp="1622546230113">
+      <screen x="1366" y="0" width="1440" height="870" />
+    </state>
+    <state x="1576" y="-13" width="896" height="745" maximized="true" key="dock-window-1/0.0.1366.738/1366.0.1440.870@1366.0.1440.870" timestamp="1622546230113" />
   </component>
 </project>

@@ -1,14 +1,17 @@
 package com.example.myapplication
 
 import android.os.Bundle
-import android.util.Log
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.Group
 import androidx.databinding.DataBindingUtil
 import com.example.myapplication.databinding.ActivityMainBinding
+
 class information(val name: String, val add: String, val photo: Int, val follower: Int, val follow: Int)
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,9 +38,39 @@ class MainActivity : AppCompatActivity() {
                 binding.codeCheck = "bấm để xem"
             }
         }
+
+        val cost : EditText = findViewById(R.id.textScreen)
+        val nextScreen : Button = findViewById(R.id.nextScreen)
+        nextScreen.isClickable = false
+        cost.addTextChangedListener(object : TextWatcher {
+
+            override fun afterTextChanged(s: Editable) {
+                //sau khi văn bản thay đổi
+
+            }
+
+            override fun beforeTextChanged(s: CharSequence, start: Int,
+                                           count: Int, after: Int) {
+                //trước khi văn bản thay đổi
+                val email: String = cost.text.toString()
+                if(email.isBlank()){
+                    binding.texthello = email
+                    nextScreen.isClickable = true
+                    nextScreen.setOnClickListener(){
+                        setContentView(R.layout.activity_screen2)
+                    }
+                }
+            }
+
+            override fun onTextChanged(s: CharSequence, start: Int,
+                                       before: Int, count: Int) {
+                //trên văn bản thay đổi
+
+            }
+        })
     }
 
-    override fun onStart() {
+    /*override fun onStart() {
         super.onStart()
         Toast.makeText(this@MainActivity, "HELLO", Toast.LENGTH_LONG).show()
         Log.d("Activity", "onStart")
@@ -61,5 +94,5 @@ class MainActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         Log.d("Activity", "onDestroy")
-    }
+    }*/
 }
