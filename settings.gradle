@@ -1,0 +1,2 @@
+rootProject.name='Social_app_screen'
+include ':app'
